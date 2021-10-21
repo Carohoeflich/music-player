@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style.css">
     <title>Music player</title>
 </head>
+
 <body>
-   <div class="music-container">
-       <div class="music-info">
-           <h4 id="titulo">La Cura</h4>
-           <div class="progress-container">
-               <div class="progress"></div>
-           </div>
-       </div>
+    <div class="music-container">
+        <div class="music-info">
+            <h4 id="titulo">La Cura</h4>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
 
 
-       <div class="img-container">
-           <img src="/aplayercover.jpg" alt="music-cover">
-       </div>
+        <div class="img-container">
+            <img src="/aplayercover.jpg" alt="music-cover">
+        </div>
 
-       <div class="navigation">
-           <button id="play" class="action-btn">
-               <i class="fas fa-play"></i>
-           </button>
-       </div>
+        <div class="navigation">
+            <button id="play" class="action-btn">
+                <i class="fas fa-play"></i>
+            </button>
 
-   </div>
-   <script async src="/script.js"></script>
+            <div class="volume-progress-container">
+                <div class="volume-progress"></div>
+            </div>
+
+            <button id=volume class="action-btn">
+                <i class="fas fa-volume-up"></i>
+                <input id=volumeInput type="range">
+            </button>
+        </div>
+
+    </div>
+    <script async src="/script.js"></script>
 </body>
 
 </html>
