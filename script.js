@@ -6,7 +6,7 @@ window.onload = function () {
     const volumenProgress = document.querySelector('.volume-progress')
     const volumenContainer = document.querySelector('.volume-progress-container')
     const volumenBtn = document.getElementById('volume')
-    const audio = new Audio('/lacura.mp3');
+    const audio = new Audio('lacura.mp3');
     const volumenInput = document.getElementById('volumeInput')
     const navigation = document.querySelector('.navigation')
 
